@@ -17,7 +17,6 @@ This project is a data analysis and visualization project focused on e-commerce 
 - `dashboard/`: This directory contains dashboard.py which is used to create dashboards of data analysis results.
 - `data/`: Directory containing the raw CSV data files.
 - `notebook.ipynb`: This file is used to perform data analysis.
-- `notebook_ID.ipynb`: notebook.ipynb in Indonesian.
 - `README.md`: This documentation file.
 
 ## Installation
@@ -27,7 +26,7 @@ git clone https://github.com/dhiyayasyifa/data-analyst.git
 ```
 2. Go to the project directory
 ```
-cd data-analyst-dicoding
+cd data-analyst
 ```
 3. Install the required Python packages by running:
 ```
@@ -42,7 +41,7 @@ pip install -r requirements.txt
 3. **Visualization**: Run the Streamlit dashboard for interactive data exploration:
 
 ```
-cd data-analyst/dashboard
+cd dashboard
 streamlit run dashboard.py
 ```
 Access the dashboard in your web browser at `http://localhost:8501`.
