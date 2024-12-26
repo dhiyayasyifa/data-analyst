@@ -11,7 +11,7 @@
 - [Data Sources](#data-sources)
 
 ## Overview
-This project is a data analysis and visualization project focused on e-commerce public data. It includes code for data wrangling, exploratory data analysis (EDA), and a Streamlit dashboard for interactive data exploration. This project aims to analyze data on the E-Commerce Public Dataset.
+This project focuses on analyzing and visualizing e-commerce public data. It includes code for data wrangling, exploratory data analysis (EDA), and an interactive Streamlit dashboard for data exploration. The goal is to extract insights from the E-Commerce Public Dataset.
 
 ## Project Structure
 - `dashboard/`: This directory contains dashboard.py which is used to create dashboards of data analysis results.
