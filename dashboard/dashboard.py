@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -45,13 +46,23 @@ if all_df is not None:
 if geolocation is not None:
     data = geolocation.drop_duplicates(subset='customer_unique_id')
 
+# Fungsi untuk mendapatkan path logo
+def get_logo_path():
+    if os.path.exists("logo.png"):
+        # Jika file logo.png ada di lokal, gunakan path lokal
+        return "logo.png"
+    else:
+        # Jika tidak ada, gunakan URL GitHub
+        return "https://raw.githubusercontent.com/dhiyayasyifa/data-analyst/main/dashboard/logo.png"
+
 # Sidebar
 with st.sidebar:
     col1, col2, col3 = st.columns(3)
     with col1:
         st.write(' ')
     with col2:
-        st.image("logo.png", width=200)
+        logo_path = get_logo_path()  # Mendapatkan path logo
+        st.image(logo_path, width=200)  # Menampilkan logo
     with col3:
         st.write(' ')
 
